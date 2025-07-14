@@ -1,46 +1,58 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fdf6f0;
+  background-color: #faf8f6;
   text-align: center;
   margin: 0;
   padding: 20px;
 }
 
 h1 {
-  color: #6a5acd;
-  margin-bottom: 30px;
+  color: #7b3d8f;
+  margin-bottom: 20px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 15px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 100px;
+.malla-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.ciclo {
+  min-width: 240px;
+  background-color: #f0e5ff;
+  border-radius: 10px;
+  padding: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ciclo h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #4a2d5b;
 }
 
 .ramo {
-  background-color: #f2d7ee;
+  background-color: #f5e6f9;
   border: 2px solid #ccc;
-  padding: 15px;
-  border-radius: 12px;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 6px 0;
+  opacity: 0.6;
   cursor: not-allowed;
-  transition: 0.3s;
-  opacity: 0.5;
-  text-align: center;
+  transition: 0.2s;
 }
 
 .ramo.habilitado {
   cursor: pointer;
   opacity: 1;
-  background-color: #d9e4f5;
+  background-color: #e2eff8;
 }
 
 .ramo.aprobado {
-  background-color: #d0f0ec;
-  border-color: #4aa6a6;
-  color: #333;
+  background-color: #d4f2e5;
+  border-color: #3a7d70;
   font-weight: bold;
   opacity: 1;
 }
