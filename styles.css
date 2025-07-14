@@ -1,62 +1,69 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #c5c6c8;
+  background-color: #2c2c2c; /* gris carbón */
   text-align: center;
   margin: 0;
   padding: 20px;
+  color: #dfcae1;
 }
 
 .titulo {
   font-family: 'Cooper Black', serif;
   font-size: 44px;
-  color: #d2a8ff; /* lila */
-  -webkit-text-stroke: 1.2px #7d4bb5; /* borde morado */
+  color: #dfcae1;       /* lila pastel */
+  -webkit-text-stroke: 1.2px #8f7193; /* borde morado profundo */
   margin-bottom: 30px;
 }
 
 .malla-container {
   display: flex;
+  flex-direction: row;
   gap: 16px;
   overflow-x: auto;
   padding-bottom: 20px;
+  justify-content: center;
 }
 
 .ciclo {
-  min-width: 240px;
-  background-color: #f3e8ff; /* lila claro */
+  background-color: #8f7193; /* morado profundo */
   border-radius: 10px;
   padding: 12px;
-  flex-shrink: 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  min-width: 240px;
+  max-width: 240px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .ciclo h2 {
   font-size: 18px;
+  color: #dfcae1;
+  border-bottom: 1px solid #c0a0c3;
+  padding-bottom: 6px;
   margin-bottom: 12px;
-  color: #5c4d6d;
 }
 
 .ramo {
-  background-color: #ffd6e8; /* rosa pastel */
-  border: 2px solid #ccc;
+  background-color: #a788ab; /* lila medio */
+  border: 2px solid #c0a0c3;
   border-radius: 8px;
   padding: 10px;
-  margin: 6px 0;
+  margin: 8px 0;
   opacity: 0.6;
-  cursor: not-allowed;
-  transition: 0.2s;
+  color: #fff;
   font-weight: 500;
+  cursor: not-allowed;
+  transition: all 0.2s ease-in-out;
 }
 
 .ramo.habilitado {
   cursor: pointer;
   opacity: 1;
-  background-color: #cce0ff; /* azul pastel */
+  background-color: #c0a0c3; /* lila claro */
 }
 
 .ramo.aprobado {
-  background-color: #bce5d8; /* verde azulado pastel */
-  border-color: #3a7d70;
+  background-color: #dfcae1; /* lila pastel */
+  border-color: #8f7193;
   font-weight: bold;
   opacity: 1;
+  color: #2c2c2c;
 }
