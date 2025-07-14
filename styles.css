@@ -1,13 +1,15 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #faf8f6;
+  background-color: #fff0f5;
   text-align: center;
   margin: 0;
   padding: 20px;
 }
 
-h1 {
-  color: #7b3d8f;
+.titulo {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 36px;
+  color: #b57edc; /* Lila pastel */
   margin-bottom: 20px;
 }
 
@@ -20,7 +22,7 @@ h1 {
 
 .ciclo {
   min-width: 240px;
-  background-color: #f0e5ff;
+  background-color: #f3e8ff; /* lila claro */
   border-radius: 10px;
   padding: 12px;
   flex-shrink: 0;
@@ -30,28 +32,29 @@ h1 {
 .ciclo h2 {
   font-size: 18px;
   margin-bottom: 12px;
-  color: #4a2d5b;
+  color: #5c4d6d;
 }
 
 .ramo {
-  background-color: #f5e6f9;
+  background-color: #ffd6e8; /* rosa pastel */
   border: 2px solid #ccc;
   border-radius: 8px;
-  padding: 8px;
+  padding: 10px;
   margin: 6px 0;
   opacity: 0.6;
   cursor: not-allowed;
   transition: 0.2s;
+  font-weight: 500;
 }
 
 .ramo.habilitado {
   cursor: pointer;
   opacity: 1;
-  background-color: #e2eff8;
+  background-color: #cce0ff; /* azul pastel */
 }
 
 .ramo.aprobado {
-  background-color: #d4f2e5;
+  background-color: #bce5d8; /* verde azulado pastel */
   border-color: #3a7d70;
   font-weight: bold;
   opacity: 1;
