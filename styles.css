@@ -1,14 +1,14 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff0f5;
+  background-color: #c5c6c8;
   text-align: center;
   margin: 0;
   padding: 20px;
 }
 
 .titulo {
-  font-family: 'Bubblegum Sans', cursive;
-  font-size: 36px;
+  font-family: 'Bubblegum', cursive;
+  font-size: 40px;
   color: #b57edc; /* Lila pastel */
   margin-bottom: 20px;
 }
