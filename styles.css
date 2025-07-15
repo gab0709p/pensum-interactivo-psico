@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Bookman Old Style', serif;
   background-color: #2c2c2c; /* gris carbón */
   text-align: center;
   margin: 0;
@@ -33,7 +33,7 @@ body {
 }
 
 .ciclo h2 {
-  font-size: 24px;
+  font-size: 22px;
   color: #dfcae1;
   border-bottom: 1px solid #c0a0c3;
   padding-bottom: 6px;
@@ -65,4 +65,5 @@ body {
   font-weight: bold;
   opacity: 1;
   color: #2c2c2c;
+  text-decoration: line-through;
 }
